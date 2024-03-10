@@ -19,3 +19,10 @@ model User {
   Name String 
   email String @unique
 }
+
+model Entrada {
+  id  Int @id @default(autoincrement())
+  name String 
+  description String 
+  value Int
+}
