@@ -11,6 +11,8 @@ export class FindManyEntradaController {
 
         const result = await FindManyUseCase.execult({name});
 
+        console.log( { result})
+
         return res.status(201).json(result)
     }  
 }
